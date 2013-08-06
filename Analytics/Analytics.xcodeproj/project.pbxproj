@@ -698,12 +698,10 @@
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
-					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Adobe",
-					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Analytics/Providers/Adobe",
+					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
+					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
+					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\"$(SRCROOT)/Analytics/Providers/Adobe\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -728,12 +726,10 @@
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
-					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
-					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Adobe",
-					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Analytics/Providers/Adobe",
+					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
+					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
+					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\"$(SRCROOT)/Analytics/Providers/Adobe\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

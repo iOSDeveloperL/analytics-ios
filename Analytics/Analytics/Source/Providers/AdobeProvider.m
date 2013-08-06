@@ -5,6 +5,8 @@
 #import "ADMS_Measurement.h"
 #import "AnalyticsLogger.h"
 
+// http://microsite.omniture.com/t2/help/en_US/sc/appmeasurement/ios/index.html#Developer_Quick_Start
+
 @implementation AdobeProvider {
     
 }
