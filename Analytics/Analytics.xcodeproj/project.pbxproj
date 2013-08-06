@@ -684,18 +684,16 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Analytics.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
-					"\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\"",
-					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
-					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -712,18 +710,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Analytics.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
-					"\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\"",
-					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
-					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
