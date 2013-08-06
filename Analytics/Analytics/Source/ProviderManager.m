@@ -9,6 +9,7 @@
 #import "Provider.h"
 #import "SegmentioProvider.h"
 
+//#import "AdobeProvider.h"
 #import "AmplitudeProvider.h"
 #import "BugsnagProvider.h"
 #import "ChartbeatProvider.h"
@@ -51,6 +52,7 @@
         // Create each provider
         [_providersArray addObject:[SegmentioProvider withSecret:secret]];
 
+        //[_providersArray addObject:[AdobeProvider withNothing]];
         [_providersArray addObject:[AmplitudeProvider withNothing]];
         [_providersArray addObject:[BugsnagProvider withNothing]];
         [_providersArray addObject:[ChartbeatProvider withNothing]];
