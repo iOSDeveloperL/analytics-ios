@@ -21,7 +21,7 @@
 - (id)initWithNothing
 {
     if (self = [self init]) {
-        self.name = @"Adobe";
+        self.name = @"Omniture";
         self.valid = NO;
         self.initialized = NO;
     }
@@ -31,11 +31,11 @@
 - (void)start
 {
     // Require the Report Suite ID and Tracking Server.
-    NSString *reportSuite = [self.settings objectForKey:@"reportSuite"];
-    NSString *trackingServer = [self.settings objectForKey:@"trackingServer"];
+    NSString *reportSuiteId = [self.settings objectForKey:@"reportSuiteId"];
+    NSString *trackingServerUrl = [self.settings objectForKey:@"trackingServerUrl"];
     
     ADMS_Measurement *measurement = [ADMS_Measurement sharedInstance];
-    [measurement configureMeasurementWithReportSuiteIDs:reportSuite trackingServer:trackingServer];
+    [measurement configureMeasurementWithReportSuiteIDs:reportSuiteId trackingServer:trackingServerUrl];
     
     // Optionally turn on SSL.
     BOOL useSSL = [[self.settings objectForKey:@"useSSL"] boolValue];
@@ -81,9 +81,9 @@
 - (void)validate
 {
     // All that's required is the report suite and the tracking server.
-    BOOL hasReportSuite = [self.settings objectForKey:@"reportSuite"] != nil;
-    BOOL hasTrackingServer = [self.settings objectForKey:@"trackingServer"] != nil;
-    self.valid = hasReportSuite && hasTrackingServer;
+    BOOL hasReportSuiteId = [self.settings objectForKey:@"reportSuiteId"] != nil;
+    BOOL hasTrackingServerUrl = [self.settings objectForKey:@"trackingServerUrl"] != nil;
+    self.valid = hasReportSuiteId && hasTrackingServerUrl;
 }
 
 
@@ -96,8 +96,14 @@
 
 - (void)track:(NSString *)event properties:(NSDictionary *)properties context:(NSDictionary *)context
 {
-    // TODO: include mapping from event --> "event1" which should be downloaded from the server.
-    [[ADMS_Measurement sharedInstance] trackEvents:event withContextData:properties];
+    NSDictionary *eventMap = [self.settings objectForKey:@"events"];
+    NSString *eventMapped = [eventMap objectForKey:event];
+    if (eventMapped != nil) {
+        [[ADMS_Measurement sharedInstance] trackEvents:eventMapped withContextData:properties];
+    }
+    else {
+        [AnalyticsLogger log:@"The event %@ is not yet mapped to Adobe (Omniture) eventN in your integration page settings. Here are the existing mappings: %@", event, eventMap];
+    }
 }
 
 - (void)screen:(NSString *)screenTitle properties:(NSDictionary *)properties context:(NSDictionary *)context

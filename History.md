@@ -1,3 +1,8 @@
+0.5.4 / 2013-8-6
+================
+* Adding support for Adobe Omniture
+* Updating Countly, Chartbeat, Flurry, Bugsnag and Localytics bundled SDKs
+
 0.5.3 / 2013-7-31
 =================
 * Adding comments, documentation and setup guide to Analytics.h

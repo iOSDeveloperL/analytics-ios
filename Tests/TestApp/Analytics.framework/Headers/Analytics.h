@@ -4,7 +4,7 @@
 #import <Foundation/Foundation.h>
 #import "ProviderManager.h"
 
-#define ANALYTICS_VERSION @"0.5.3"
+#define ANALYTICS_VERSION @"0.5.4"
 
 @interface Analytics : NSObject
 

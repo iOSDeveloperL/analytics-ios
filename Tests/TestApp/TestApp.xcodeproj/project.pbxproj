@@ -23,7 +23,7 @@
 		D326EA7817A9AE6500266B18 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D326EA7717A9AE6500266B18 /* AdSupport.framework */; };
 		D326EA7A17A9AE6C00266B18 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D326EA7917A9AE6C00266B18 /* libsqlite3.dylib */; };
 		D326EA7C17A9AE7200266B18 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D326EA7B17A9AE7200266B18 /* libz.dylib */; };
-		D3B3AB3B17B0D2F200BFFA48 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B3AB3A17B0D2F200BFFA48 /* Analytics.framework */; };
+		D344FA5217B0FAA2008A51B9 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D344FA5117B0FAA2008A51B9 /* Analytics.framework */; };
 		D3B3AB3D17B0D3C600BFFA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3AB3C17B0D3C600BFFA48 /* ViewController.m */; };
 		D3B3AB4017B0D3CB00BFFA48 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3AB3E17B0D3CB00BFFA48 /* MainStoryboard_iPad.storyboard */; };
 		D3B3AB4117B0D3CB00BFFA48 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3AB3F17B0D3CB00BFFA48 /* MainStoryboard_iPhone.storyboard */; };
@@ -50,7 +50,7 @@
 		D326EA7717A9AE6500266B18 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D326EA7917A9AE6C00266B18 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D326EA7B17A9AE7200266B18 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D3B3AB3A17B0D2F200BFFA48 /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Analytics.framework; sourceTree = "<group>"; };
+		D344FA5117B0FAA2008A51B9 /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Analytics.framework; sourceTree = "<group>"; };
 		D3B3AB3C17B0D3C600BFFA48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3B3AB3E17B0D3CB00BFFA48 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		D3B3AB3F17B0D3CB00BFFA48 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				D326EA7A17A9AE6C00266B18 /* libsqlite3.dylib in Frameworks */,
 				D326EA7817A9AE6500266B18 /* AdSupport.framework in Frameworks */,
 				D326EA7617A9AE5F00266B18 /* QuartzCore.framework in Frameworks */,
-				D3B3AB3B17B0D2F200BFFA48 /* Analytics.framework in Frameworks */,
+				D344FA5217B0FAA2008A51B9 /* Analytics.framework in Frameworks */,
 				D326EA7417A9AE5800266B18 /* CoreTelephony.framework in Frameworks */,
 				D326EA7217A9AE5100266B18 /* SystemConfiguration.framework in Frameworks */,
 				D326EA7017A9AE4B00266B18 /* CoreData.framework in Frameworks */,
@@ -99,8 +99,8 @@
 		D326EA5117A9AE2B00266B18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3B3AB3A17B0D2F200BFFA48 /* Analytics.framework */,
 				D326EA7B17A9AE7200266B18 /* libz.dylib */,
+				D344FA5117B0FAA2008A51B9 /* Analytics.framework */,
 				D326EA7917A9AE6C00266B18 /* libsqlite3.dylib */,
 				D326EA7717A9AE6500266B18 /* AdSupport.framework */,
 				D326EA7517A9AE5F00266B18 /* QuartzCore.framework */,
