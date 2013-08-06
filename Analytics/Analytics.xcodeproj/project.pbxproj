@@ -22,6 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D37861DD17B0E4A600865BFE /* ADMS_MboxFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D37861D617B0E4A600865BFE /* ADMS_MboxFactory.h */; };
+		D37861DE17B0E4A600865BFE /* ADMS_Measurement.h in Headers */ = {isa = PBXBuildFile; fileRef = D37861D717B0E4A600865BFE /* ADMS_Measurement.h */; };
+		D37861DF17B0E4A600865BFE /* ADMS_MediaMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = D37861D817B0E4A600865BFE /* ADMS_MediaMeasurement.h */; };
+		D37861E017B0E4A600865BFE /* admsAppLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37861D917B0E4A600865BFE /* admsAppLibrary.a */; };
+		D37861E117B0E4A600865BFE /* TrackingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D37861DB17B0E4A600865BFE /* TrackingHelper.h */; };
+		D37861E217B0E4A600865BFE /* TrackingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D37861DC17B0E4A600865BFE /* TrackingHelper.m */; };
 		D3B2AB751786554100D60FE3 /* AnalyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2AB741786554100D60FE3 /* AnalyticsLogger.m */; };
 		D3B2AB771786555A00D60FE3 /* AnalyticsLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2AB761786555A00D60FE3 /* AnalyticsLogger.h */; };
 		F7200B7717659B2F003F3138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7200B7617659B2F003F3138 /* Foundation.framework */; };
@@ -139,6 +145,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D37861D617B0E4A600865BFE /* ADMS_MboxFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMS_MboxFactory.h; sourceTree = "<group>"; };
+		D37861D717B0E4A600865BFE /* ADMS_Measurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMS_Measurement.h; sourceTree = "<group>"; };
+		D37861D817B0E4A600865BFE /* ADMS_MediaMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMS_MediaMeasurement.h; sourceTree = "<group>"; };
+		D37861D917B0E4A600865BFE /* admsAppLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = admsAppLibrary.a; sourceTree = "<group>"; };
+		D37861DB17B0E4A600865BFE /* TrackingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingHelper.h; sourceTree = "<group>"; };
+		D37861DC17B0E4A600865BFE /* TrackingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingHelper.m; sourceTree = "<group>"; };
 		D3B2AB741786554100D60FE3 /* AnalyticsLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AnalyticsLogger.m; path = Analytics/Source/AnalyticsLogger.m; sourceTree = "<group>"; };
 		D3B2AB761786555A00D60FE3 /* AnalyticsLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnalyticsLogger.h; path = Analytics/Source/AnalyticsLogger.h; sourceTree = "<group>"; };
 		F7200B7317659B2F003F3138 /* libAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,6 +276,7 @@
 				F78D2A171765B81D000B937E /* AdSupport.framework in Frameworks */,
 				F78D29911765AEC4000B937E /* CoreData.framework in Frameworks */,
 				F78D29FC1765B38A000B937E /* QuartzCore.framework in Frameworks */,
+				D37861E017B0E4A600865BFE /* admsAppLibrary.a in Frameworks */,
 				F78D29FA1765B382000B937E /* UIKit.framework in Frameworks */,
 				F78D29951765AF6A000B937E /* CoreTelephony.framework in Frameworks */,
 				F78D29931765AECB000B937E /* SystemConfiguration.framework in Frameworks */,
@@ -277,9 +290,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D37861D517B0E4A600865BFE /* Adobe */ = {
+			isa = PBXGroup;
+			children = (
+				D37861D617B0E4A600865BFE /* ADMS_MboxFactory.h */,
+				D37861D717B0E4A600865BFE /* ADMS_Measurement.h */,
+				D37861D817B0E4A600865BFE /* ADMS_MediaMeasurement.h */,
+				D37861D917B0E4A600865BFE /* admsAppLibrary.a */,
+				D37861DA17B0E4A600865BFE /* Examples */,
+			);
+			name = Adobe;
+			path = Analytics/Providers/Adobe;
+			sourceTree = "<group>";
+		};
+		D37861DA17B0E4A600865BFE /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D37861DB17B0E4A600865BFE /* TrackingHelper.h */,
+				D37861DC17B0E4A600865BFE /* TrackingHelper.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		F7200B6A17659B2F003F3138 = {
 			isa = PBXGroup;
 			children = (
+				D37861D517B0E4A600865BFE /* Adobe */,
 				D3B2AB761786555A00D60FE3 /* AnalyticsLogger.h */,
 				D3B2AB741786554100D60FE3 /* AnalyticsLogger.m */,
 				F74DC90417659F4B00734A95 /* Analytics.m */,
@@ -449,6 +485,7 @@
 				F7200C0417659D7F003F3138 /* GAITransactionItem.h in Headers */,
 				F7200BEC17659D5F003F3138 /* LocalyticsSession.h in Headers */,
 				F7200BEF17659D5F003F3138 /* Mixpanel.h in Headers */,
+				D37861DE17B0E4A600865BFE /* ADMS_Measurement.h in Headers */,
 				F7200BA517659BBF003F3138 /* Segmentio.h in Headers */,
 				F7200B9817659BB4003F3138 /* AmplitudeProvider.h in Headers */,
 				F7200B9917659BB4003F3138 /* BugsnagProvider.h in Headers */,
@@ -457,6 +494,8 @@
 				F7200B9D17659BB4003F3138 /* FlurryProvider.h in Headers */,
 				F7200B9E17659BB4003F3138 /* GoogleAnalyticsProvider.h in Headers */,
 				F7200B9F17659BB4003F3138 /* KISSmetricsProvider.h in Headers */,
+				D37861E117B0E4A600865BFE /* TrackingHelper.h in Headers */,
+				D37861DF17B0E4A600865BFE /* ADMS_MediaMeasurement.h in Headers */,
 				F7200BA017659BB4003F3138 /* LocalyticsProvider.h in Headers */,
 				F7200BA117659BB4003F3138 /* MixpanelProvider.h in Headers */,
 				F7200BA217659BB4003F3138 /* Provider.h in Headers */,
@@ -481,6 +520,7 @@
 				F7200BE117659D5F003F3138 /* NSNumber+BSFileSizes.h in Headers */,
 				F7200BE017659D5F003F3138 /* NSNumber+BSDuration.h in Headers */,
 				F7200BDE17659D5F003F3138 /* NSDictionary+BSJSON.h in Headers */,
+				D37861DD17B0E4A600865BFE /* ADMS_MboxFactory.h in Headers */,
 				F7200BEB17659D5F003F3138 /* LocalyticsDatabase.h in Headers */,
 				F7200BED17659D5F003F3138 /* LocalyticsUploader.h in Headers */,
 				F7200BEE17659D5F003F3138 /* WebserviceConstants.h in Headers */,
@@ -589,6 +629,7 @@
 				F74DC8BE17659EF500734A95 /* GoogleAnalyticsProvider.m in Sources */,
 				F74DC8DA17659F2400734A95 /* KISSMetricsAPI.m in Sources */,
 				F74DC8BF17659EF500734A95 /* KISSmetricsProvider.m in Sources */,
+				D37861E217B0E4A600865BFE /* TrackingHelper.m in Sources */,
 				F74DC8DB17659F2400734A95 /* LocalyticsDatabase.m in Sources */,
 				F74DC8C017659EF500734A95 /* LocalyticsProvider.m in Sources */,
 				F74DC8DC17659F2400734A95 /* LocalyticsSession.m in Sources */,
@@ -692,10 +733,12 @@
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
-					"\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\"",
-					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
-					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Adobe",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Analytics/Providers/Adobe",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -720,10 +763,12 @@
 				GCC_PREFIX_HEADER = "Analytics/Analytics-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Analytics/Providers/Chartbeat\"",
-					"\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\"",
-					"\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\"",
-					"\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/Chartbeat\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/CrittercismSDK/CrittercismSDK\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/FlurrySDK/Flurry\\\"",
+					"\\\"$(SRCROOT)/Analytics/Providers/GoogleAnalytics-iOS-SDK/Library\\\"",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Adobe",
+					"/Users/reinpk/dev/segmentio-project/analytics-ios-osx/Analytics/Analytics/Providers/Adobe",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
